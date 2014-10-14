@@ -1,0 +1,1 @@
+Using Factory in AngularJS.

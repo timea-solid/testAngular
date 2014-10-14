@@ -6,7 +6,154 @@
     "files": [
       "index.html"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot01",
+    "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot01",
     "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot01"
+  },
+  {
+    "name": "snapshot02",
+    "number": 2,
+    "message": "Starter HTML page with a text input",
+    "files": [
+      "index.html"
+    ],
+    "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot01",
+    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot01"
+  },
+  {
+    "name": "snapshot03",
+    "number": 3,
+    "message": "Added keyup event listener on textInput.",
+    "files": [
+      "index.html"
+    ],
+    "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot03",
+    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot02"
+  },
+  {
+    "name": "snapshot04",
+    "number": 4,
+    "message": "Updating a span when input text changes using the DOM API.",
+    "files": [
+      "index.html"
+    ],
+    "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot04",
+    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot04"
+  },
+  {
+    "name": "snapshot05",
+    "number": 5,
+    "message": "Updating a template when input text changes using Angular.",
+    "files": [
+      "index.html"
+    ],
+    "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot05",
+    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot07"
+  },
+  {
+    "name": "snapshot06",
+    "number": 6,
+    "message": "Output a variable with ng-bind.",
+    "files": [
+      "index.html"
+    ],
+    "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot06",
+    "runUrl": ""
+  },
+  {
+    "name": "snapshot07",
+    "number": 7,
+    "message": "First name and last name.",
+    "files": [
+      "index.html"
+    ],
+    "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot07",
+    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot09"
+  },
+  {
+    "name": "snapshot08",
+    "number": 8,
+    "message": "Angular expresions.",
+    "files": [
+      "index.html"
+    ],
+    "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot08",
+    "runUrl": ""
+  },
+  {
+    "name": "snapshot09",
+    "number": 9,
+    "message": "ng-init directive.",
+    "files": [
+      "index.html"
+    ],
+    "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot09",
+    "runUrl": ""
+  },
+  {
+    "name": "snapshot10",
+    "number": 10,
+    "message": "Initializing the model using an Angular controller, defined with a global function.",
+    "files": [
+      "index.html"
+    ],
+    "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot10",
+    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot10"
+  },
+  {
+    "name": "snapshot11",
+    "number": 11,
+    "message": "Initializing the model using an Angular controller, defined within an Angular module.",
+    "files": [
+      "index.html"
+    ],
+    "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot11",
+    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot11"
+  },
+  {
+    "name": "snapshot12",
+    "number": 12,
+    "message": "Looping over lists in templates using ng-repeat.",
+    "files": [
+      "index.html"
+    ],
+    "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot12",
+    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot14"
+  },
+  {
+    "name": "snapshot13",
+    "number": 13,
+    "message": "Using links with routes for navigation between views.",
+    "files": [
+      "index.html",
+      "country-detail.html",
+      "country-list.html"
+    ],
+    "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot13",
+    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot37"
+  },
+  {
+    "name": "snapshot14",
+    "number": 14,
+    "message": "Using Factory in AngularJS.",
+    "files": [
+      "index.html",
+      "country-detail.html",
+      "country-list.html"
+    ],
+    "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot14",
+    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot37"
+  },
+  {
+    "name": "snapshot15",
+    "number": 15,
+    "message": "Reading a file from the server.",
+    "files": [
+      "index.html",
+      "country-detail.html",
+      "country-list.html",
+      "countries.json"
+    ],
+    "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot15",
+    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot37"
   }
 ]

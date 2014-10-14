@@ -1,0 +1,42 @@
+<html ng-app="countryApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular.js Example</title>
+  </head>
+  <body>
+    <div ng-view></div>
+	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular-route.min.js"></script>
+  <script>
+      var countryApp = angular.module('countryApp', ['ngRoute']);
+
+      countryApp.config(function($routeProvider) {
+        $routeProvider.
+          when('/', {
+            templateUrl: 'country-list.html',
+            controller: 'CountryListCtrl'
+          }).
+          when('/:countryName', {
+            templateUrl: 'country-detail.html',
+            controller: 'CountryDetailCtrl'
+          }).
+          otherwise({
+            redirectTo: '/'
+          });
+      });
+
+      countryApp.controller('CountryListCtrl', function ($scope, $http){
+        $scope.countries = [
+					{name: 'China', population: '1359821000'},
+					{name: 'India', population: '1205625000'},
+					{name: 'USA', population: '312247000'}
+					];
+			});
+
+      countryApp.controller('CountryDetailCtrl', function ($scope, $routeParams){
+        $scope.name = $routeParams.countryName;
+      });
+  </script>
+  </body>
+</html>
