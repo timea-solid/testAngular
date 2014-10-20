@@ -1,4 +1,4 @@
-<html ng-app="countryApp">
+<html ng-app="nameApp">
   <head>
     <meta charset="utf-8">
     <title>Angular.js Example</title>
@@ -6,36 +6,37 @@
   <body>
     <div ng-view></div>
 	
-	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular-route.min.js"></script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.js"></script>
   <script>
-      var countryApp = angular.module('countryApp', ['ngRoute']);
+      var nameApp = angular.module('nameApp', ['ngRoute']);
 
-      countryApp.config(function($routeProvider) {
+      nameApp.config(function($routeProvider) {
         $routeProvider.
           when('/', {
-            templateUrl: 'country-list.html',
-            controller: 'CountryListCtrl'
+            templateUrl: 'person-list.html',
+            controller: 'NameListCtrl'
           }).
-          when('/:countryName', {
-            templateUrl: 'country-detail.html',
-            controller: 'CountryDetailCtrl'
+          when('/:firstName', {
+            templateUrl: 'person-detail.html',
+            controller: 'NameDetailCtrl'
           }).
           otherwise({
             redirectTo: '/'
           });
       });
 
-      countryApp.controller('CountryListCtrl', function ($scope, $http){
-        $scope.countries = [
-					{name: 'China', population: '1359821000'},
-					{name: 'India', population: '1205625000'},
-					{name: 'USA', population: '312247000'}
+      nameApp.controller('NameListCtrl', function ($scope){
+				$scope.persons = [
+					{firstName: 'Larry', lastName: 'Page'},
+					{firstName: 'Curly', lastName: 'Braces'},
+					{firstName: 'Moe', lastName: 'Simpson'}
 					];
 			});
 
-      countryApp.controller('CountryDetailCtrl', function ($scope, $routeParams){
-        $scope.name = $routeParams.countryName;
+      nameApp.controller('NameDetailCtrl', function ($scope, $routeParams){
+        $scope.name = $routeParams.firstName;
       });
   </script>
   </body>

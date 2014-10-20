@@ -2,13 +2,6 @@
   <head>
     <meta charset="utf-8">
     <title>Angular.js Example</title>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
-    <script>
-      function NameCtrl($scope){
-        $scope.firstName = 'John';
-        $scope.lastName = 'Smith';
-      }
-    </script>
   </head>
   <body ng-controller="NameCtrl">
     First name:<input ng-model="firstName" type="text"/>
@@ -16,5 +9,13 @@
     Last name:<input ng-model="lastName" type="text"/>
     <br>
     Hello {{firstName}} {{lastName}}
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<script>
+      function NameCtrl($scope){
+        $scope.firstName = 'John';
+        $scope.lastName = 'Smith';
+      }
+  </script>
   </body>
 </html>

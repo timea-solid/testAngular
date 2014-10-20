@@ -2,17 +2,18 @@
   <head>
     <meta charset="utf-8">
     <title>Angular.js Example</title>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
-    <script>
-      var nameApp = angular.module('nameApp', []);
-      nameApp.controller('NameCtrl', function ($scope){
-        $scope.names = ['Larry', 'Curly', 'Moe'];
-      });
-    </script>
   </head>
   <body ng-controller="NameCtrl">
     <ul>
       <li ng-repeat="name in names">{{name}}</li>
     </ul>
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<script>
+      var nameApp = angular.module('nameApp', []);
+      nameApp.controller('NameCtrl', function ($scope){
+        $scope.names = ['Larry', 'Curly', 'Moe'];
+      });
+    </script>
   </body>
 </html>

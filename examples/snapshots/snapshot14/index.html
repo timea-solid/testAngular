@@ -1,58 +1,59 @@
-<html ng-app="countryApp">
+<html ng-app="nameApp">
   <head>
     <meta charset="utf-8">
     <title>Angular.js Example</title>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular-route.min.js"></script>
-    <script>
-      var countryApp = angular.module('countryApp', ['ngRoute']);
+  </head>
+  <body>
+    <div ng-view></div>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.js"></script>
+  <script>
+      var nameApp = angular.module('nameApp', ['ngRoute']);
 
-			countryApp.factory('simpleFactory', function() {
-				var factory = {};
-				var countries = [
-					{name: 'China', population: '1359821000'},
-					{name: 'India', population: '1205625000'},
-					{name: 'USA', population: '312247000'}
-					];
-				
-				factory.getNames = function () {
-					return countries
-				};
-				
-				factory.putNames = function () {
-					countries.push()
-				};
-				
-				return factory;
-				
-				})
-		
-      countryApp.config(function($routeProvider) {
+      nameApp.config(function($routeProvider) {
         $routeProvider.
           when('/', {
-            templateUrl: 'country-list.html',
-            controller: 'CountryListCtrl'
+            templateUrl: 'person-list.html',
+            controller: 'NameListCtrl'
           }).
-          when('/:countryName', {
-            templateUrl: 'country-detail.html',
-            controller: 'CountryDetailCtrl'
+          when('/:firstName', {
+            templateUrl: 'person-detail.html',
+            controller: 'NameDetailCtrl'
           }).
           otherwise({
             redirectTo: '/'
           });
       });
 
-			 countryApp.controller('CountryListCtrl', function ($scope,simpleFactory){
-        $scope.countries = simpleFactory.getNames();
+			nameApp.factory('simpleFactory', function() {
+				var factory = {};
+				var persons = [
+					{firstName: 'Larry', lastName: 'Page'},
+					{firstName: 'Curly', lastName: 'Braces'},
+					{firstName: 'Moe', lastName: 'Simpson'}
+					];
+				
+				factory.getNames = function () {
+					return persons;
+				};
+				
+				factory.putNames = function () {
+					persons.push();
+				};
+				
+				return factory;
+				
+				})
+				
+      nameApp.controller('NameListCtrl', function ($scope, simpleFactory){
+				$scope.persons = simpleFactory.getNames();
 			});
-			
 
-      countryApp.controller('CountryDetailCtrl', function ($scope, $routeParams){
-        $scope.name = $routeParams.countryName;
+      nameApp.controller('NameDetailCtrl', function ($scope, $routeParams){
+        $scope.name = $routeParams.firstName;
       });
-    </script>
-  </head>
-  <body>
-    <div ng-view></div>
+  </script>
   </body>
 </html>

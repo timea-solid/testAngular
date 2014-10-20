@@ -125,8 +125,8 @@
     "message": "Using links with routes for navigation between views.",
     "files": [
       "index.html",
-      "country-detail.html",
-      "country-list.html"
+      "person-detail.html",
+      "person-list.html"
     ],
     "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot13",
     "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot37"
@@ -137,8 +137,8 @@
     "message": "Using Factory in AngularJS.",
     "files": [
       "index.html",
-      "country-detail.html",
-      "country-list.html"
+      "person-detail.html",
+      "person-list.html"
     ],
     "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot14",
     "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot37"
@@ -149,11 +149,25 @@
     "message": "Reading a file from the server.",
     "files": [
       "index.html",
-      "country-detail.html",
-      "country-list.html",
-      "countries.json"
+      "person-detail.html",
+      "person-list.html",
+      "persons.json"
     ],
     "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot15",
     "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot37"
+  },
+	{
+    "name": "snapshot16",
+    "number": 16,
+    "message": "Script in separate file.",
+    "files": [
+      "index.html",
+			"app.js",
+      "person-detail.html",
+      "person-list.html",
+      "persons.json"
+    ],
+    "url": "https://github.com/theRealImy/testAngular/blob/master/examples/snapshots/snapshot16",
+    "runUrl": ""
   }
 ]
